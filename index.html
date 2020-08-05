@@ -11,25 +11,242 @@
     <!-- Header Section -->
 
     <header>
-       <div>
+       <div class="mobile-hidden">
            <a class="index" href="#">
            <img class="logo-desktop" src="resources/images/ic-logo.svg">
-           <span class="colmar">Colmar</span><span class="academy">Academy</span>
+           <span class="colmar uppercase">Colmar</span>
+           <span class="academy uppercase">Academy</span>
            </a>
         </div> 
         <nav>
             <ul>
-                <li><a href="#"><img src="resources/images/ic-logo.svg"></a></li>
-                <li><a href="#"><img src="resources/images/ic-on-campus.svg"> <span>On campus</span></a></li>
-                <li><a href="#"><img src="resources/images/ic-online.svg"> <span>Online</span></a></li>
-                <li class="companies"><a href="#"><span>For companies</span></a></li>
-                <li><a href="#"><img src="resources/images/ic-login.svg"> <span>Sign in</span></a></li>
+                <li>
+                    <a href="#">
+                        <img src="resources/images/ic-logo.svg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="resources/images/ic-on-campus.svg">
+                        <span class="mobile-hidden">On campus</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="resources/images/ic-online.svg"> 
+                        <span class="mobile-hidden">Online</span>
+                    </a>
+                </li>
+                <li class="mobile-hidden">
+                    <a href="#">
+                        <span>For companies</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="resources/images/ic-login.svg">
+                        <span class="mobile-hidden">Sign in</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <!-- Banner Section-->
 
+    <section class="banner-section">
+             
+        
+        <img class="banner-image left-60" src="resources/images/banner.jpg">
+        
+        <div class="banner-text right-40">
+            <h1>Learn something new everyday</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a ref="#">
+                <button class="start-button">Start here</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="information-section">
+
+        <div class="information left-60">
+            <img src="resources\images\information-main.jpg">
+            <div class="information-text">
+                <h2>It doesn't hurt to keep practicing</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem sit exercitationem qui nemo illo vero, et non at, ullam, laudantium nesciunt consequuntur ut dicta aperiam voluptas mollitia itaque rerum assumenda.</p>
+                <p>Emanual, Sr Stategist at Hiring.com</p>
+            </div>
+        </div>
+
+      
+     <div class="right-40 articles-container">
+        <article class="article">
+          <picture>
+            <source srcset="resources\images\information-orientation.jpg"
+                   media="(min-width: 768px)">
+            <img src="resources/images/information-orientation-mobile.jpg"/>
+          </picture>
+          <div class="article-text">
+             <h3>Orientation date</h3>
+             <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+             <a>Read more</a>
+          </div>
+        </article>
+       
+        <article class="article">
+         <picture>
+           <source srcset="resources/images/information-campus.jpg"
+                  media="(min-width: 768px)">
+           <img src="resources/images/information-campus-mobile.jpg"/>
+         </picture> 
+         <div class="article-text">
+            <h3>Our campus</h3>
+            <p>Find a campus close by you</p>
+            <a>Read more</a>
+         </div>
+        </article>
+ 
+       <article class="article">
+         <picture>
+           <source srcset="resources/images/information-guest-lecture.jpg"
+                  media="(min-width: 768px)">
+           <img src="resources/images/information-guest-lecture-mobile.jpg"/>
+         </picture> 
+         <div class="article-text">
+            <h3>Special guest lecture</h3>
+            <p>Join a keynote with Oliver Sacks about music in medical treatment</p>
+            <a>Read more</a>
+         </div>
+       </article>
+ 
+      </div>
+ 
+
+   </section> 
+
+   <!--Start learning Section-->
+
+   <section class="start-learning">
+       <h2>Start learning</h2>
+       <ul>
+
+           <li class="card">
+               <a href="#">
+                 <img class="mobile-hidden" src="resources/images/course-software.jpg">               
+                 <div class="card-text">
+                     <h3>Software engineering</h3>
+                     <span class="mobile-hidden uppercase" >courses</span>
+                     <p class="mobile-hidden">Web Development, Mobile Development, iOT, APIs</p>
+                 </div>
+               </a>
+           </li>
+
+           <li class="card">
+            <a href="#">
+              <img class="mobile-hidden" src="resources/images/course-computer-art.jpg">               
+              <div class="card-text">
+                  <h3>Computer art</h3>
+                  <span class="mobile-hidden uppercase">courses</span>
+                  <p class="mobile-hidden">Imaging & Design, </p>
+              </div>
+            </a>  
+        </li>
+
+        <li class="card">
+            <a href="#">
+              <img class="mobile-hidden" src="resources/images/course-design.jpg">               
+              <div class="card-text">
+                  <h3>Design</h3>
+                  <span class="mobile-hidden uppercase">courses</span>
+                  <p class="mobile-hidden">User Experience Design, User Research, Visual Design</p>
+              </div>
+            </a>  
+        </li>
+
+        <li class="card">
+            <a href="#">
+              <img class="mobile-hidden" src="resources/images/course-data.jpg">               
+              <div class="card-text">
+                  <h3>Data</h3>
+                  <span class="mobile-hidden uppercase">courses</span>
+                  <p class="mobile-hidden">Data Science, Big Data, SQL, Data Visualization</p>
+              </div>
+            </a>  
+        </li>
+
+        <li class="card">
+            <a href="#">
+              <img class="mobile-hidden" src="resources/images/course-business.jpg">               
+              <div class="card-text">
+                  <h3>Business</h3>
+                  <span class="mobile-hidden uppercase">courses</span>
+                  <p class="mobile-hidden">Product Development, Business Development, Startup</p>
+              </div>
+            </a>  
+        </li>
+
+        <li class="card">
+            <a href="#">
+              <img class="mobile-hidden" src="resources/images/course-marketing.jpg">               
+              <div class="card-text">
+                  <h3>Marketing</h3>
+                  <span class="mobile-hidden uppercase">courses</span>
+                  <p class="mobile-hidden"> Analytics, Content Marketing, Mobile Marketing</p>
+              </div>
+        </li>
+
+       </ul>
+
+   </section>
+
+   <!-- Thesis Section-->
+
+   <section class="thesis-exhibits">
+
+    <h2>Thesis exhibits</h2>
+
+    <div class="subsections-container">
+        <main class="left-60">
+            <video src="resources/videos/thesis.mp4" controls="controls"> </video>
+            <div class="main-thesis-text mobile-hidden">
+                <h2>Reimagine urban</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem sit exercitationem qui nemo illo vero, et non at, ullam, laudantium nesciunt consequuntur ut dicta aperiam voluptas mollitia itaque rerum assumenda.</p>
+            </div>
+        </main>
     
+        <div class="right-40 thesis-articles  mobile-hidden">
+          <article class="article">
+            <img src="resources/images/thesis-fisma.jpg">
+            <div class="article-text">
+               <h3>Fisma: Design and Prototype</h3>
+               <p>Designer showcase of new prototype product</p>
+            </div>
+          </article>
+    
+          <article class="article">
+            <img src="resources/images/thesis-now-and-then.jpg">
+            <div class="article-text">
+               <h3>Now and then</h3>
+               <p>Research study about New York</p>
+            </div>
+          </article>
+        </div>
+    </div>
+    
+
+
+</section> 
+
+   <!-- Footer Section -->
+   <footer>
+    <span>© 2016 Colmar Academy. All rights reserved </span>
+    <div>
+        <a class="mobile-hidden" href="#">Terms</a>
+        <a class="mobile-hidden" href="#">Privacy</a>
+    </div>
+  </footer>   
+  
 </body>
 </html>
