@@ -1,11 +1,4 @@
 /* --- Universal Styles --- */
-/*html,body
-{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}*/
 
 * {
     margin: 0;
@@ -53,6 +46,16 @@
 
     .right-65 {
         width: 65%;
+    }
+
+    
+
+    .background-change {
+        transition-property: background-color;transition-duration: 2s;
+    }
+
+    .background-change:hover {
+        background-color: #D8D8D8 ;
     }
 
 }
@@ -162,14 +165,73 @@ nav ul {
         background-color: #4A4A4A;
         width: 100%;
     }
+
 }    
 
 
 
 /* --- Articles Section --- */
+.information-section { background-color: #F3F5F5 ; }
+.articles-container {padding: 16px;}
+/*.article {width: 100%;}*/
+picture img {width: 100%;}
+
+.article-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    text-align: left;
+}
+
+.article-text p { padding: 8px 0;}
+
+.article-text a {color: #4A90E2;}
+
+@media only screen and (min-width: 768px) {
+
+    .information img { width: 100%;}
+
+    .information-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+    .information {
+        
+        padding: 32px 24px;
+       }
+   
+    
+   
+    .information-text { text-align: left;}
+   
+    .information-text h2 { padding: 32px 0 24px 0; }
+   
+    .information-text p {padding-bottom: 32px;}
+
+    .articles-container {padding: 0;}
+
+    .article {
+        display: flex;
+        align-items: center;
+        
+    }
+    .article-text {padding: 0;}
+
+    .article picture {padding: 16px;}
 
 
-.information {display: none;}
+    /*picture source {
+        width: 100%;
+        height: auto;
+    }*/  
+}
+
+/*.information {display: none;}
 
 .information-section {
     padding: 16px 16px 32px 16px;
@@ -185,12 +247,11 @@ nav ul {
     width: 100%;
 }
 
+picture img { width: 100%;}
+
 .article-text a {
     color: #4A90E2;
 }
-
-/*   Article on Desktop   */
-
 @media only screen and (min-width: 768px){
     
     .information-section {
@@ -236,7 +297,7 @@ nav ul {
     }
 
     picture img { width: 100%;}
-}
+}*/
 
 /* --- Start learning Section ---*/
 
@@ -298,7 +359,7 @@ nav ul {
 
 /* --- Thesis Section ---*/
 
-.thesis-exhibits { 
+/*.thesis-exhibits { 
     padding: 32px 0 24px 0;
     background-color: #F3F5F5;
  }
@@ -322,7 +383,7 @@ nav ul {
 
     .main-thesis-text h2 { padding: 24px 0 8px 0; }
 
-}    
+}    */
 
 /*@media only screen and (min-width: 768px) {
 
