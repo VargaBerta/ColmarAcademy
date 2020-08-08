@@ -6,7 +6,7 @@
   }
 
   body {
-    font-family: sans-serif;
+    font-family: Helvetica, sans-serif;
     text-align: center;
     margin: 0px;
   }
@@ -48,8 +48,6 @@
         width: 65%;
     }
 
-    
-
     .background-change {
         transition-property: background-color;transition-duration: 2s;
     }
@@ -57,13 +55,12 @@
     .background-change:hover {
         background-color: #D8D8D8 ;
     }
-
 }
 
 
 
 
-/* --- Header Section --- */
+/* --- HEADER SECTION --- */
 
 header {
   width: 100%;
@@ -85,23 +82,21 @@ nav ul {
 
 /*a.index { display: none; }*/
 
-/*  Header on Desktop */
-
 @media only screen and (min-width: 768px) {
    
     header { 
        justify-content: space-between;
     }
 
-    nav { padding-right: 24px;}
+    nav { padding-right: 24px; }
     
     nav ul { justify-content: flex-end; }
 
     header li { padding-left: 16px; }
 
-    header li img {display: none;}
+    header li img { display: none; }
 
-    a.index { display: flex; }
+    /*a.index { display: flex; }*/
     
     .index {
         display: flex;
@@ -115,7 +110,7 @@ nav ul {
     .academy { color: #9B9B9B; }
 }
 
-/* Banner Section */
+/* BANNER SECTION */
 
 .banner-section {
     background-color:#DBDBDB;
@@ -152,9 +147,7 @@ nav ul {
         justify-content: center;
     }
 
-    .banner-image {
-        padding: 32px 24px;
-    }
+    .banner-image { padding: 32px 24px; }
 
     .banner-text {
         height: 50%;
@@ -170,7 +163,8 @@ nav ul {
 
 
 
-/* --- Articles Section --- */
+/* --- ARTICLES SECTION --- */
+
 .information-section { background-color: #F3F5F5 ; }
 .articles-container {padding: 16px;}
 /*.article {width: 100%;}*/
@@ -184,41 +178,42 @@ picture img {width: 100%;}
     text-align: left;
 }
 
-.article-text p { padding: 8px 0;}
+.article-text p { padding: 8px 0; }
 
-.article-text a {color: #4A90E2;}
+.article-text a { color: #4A90E2; }
 
 @media only screen and (min-width: 768px) {
 
-    .information img { width: 100%;}
+    .information img { width: 100%; }
 
     .information-section {
         display: flex;
-        align-items: center;
         justify-content: center;
     }
 
-    
-
-    .information {
-        padding: 32px 24px;
-    }
+    .information { padding: 32px 24px; }
       
     .information-text { text-align: left;}
    
     .information-text h2 { padding: 32px 0 24px 0; }
    
-    .information-text p {padding-bottom: 32px;}
+    .information-text p { padding-bottom: 32px; }
 
-    .articles-container {padding: 0;}
+    .information-text span { font-size: 12px; }
+
+    .articles-container {
+        padding: 0;
+        margin-top: 16px;
+    }
 
     .article {
         display: flex;
         align-items: center;
     }
-    .article-text {padding: 0;}
 
-    .article picture {padding: 16px;}
+    .article-text { padding: 0; }
+
+    .article picture { padding: 16px; }
 }
 
 /* --- Start learning Section ---*/
@@ -239,47 +234,59 @@ picture img {width: 100%;}
 
  .card h3 {text-align: left;}
 
- .card img {
-    width: 100%;
-}
-
-/*   Start learning on Desktop  */
 
 @media only screen and (min-width: 768px) {
 
-    .start-learning { 
+   .start-learning { 
         background-color: #eaebec;
-        padding: 32px 72px;
+        padding: 32px 72px 16px 72px;
     }
 
-    .card { 
-        text-align: left;
-        background-color: #ffffff;
-        width: 300px;
-        height: 300px;
-        margin: 16px;
-    }
+    .start-learning h2 { margin-bottom: 16px; }
 
     .start-learning ul {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        
+        /*align-items: center;*/
+    }
+
+    .start-learning a {
+        width: 33%;
+        box-sizing: border-box;
+    }
+
+    .card { 
+        width: 100%;
+        text-align: left;
+        background-color: #ffffff;
+        /*height: 300px;*/
+        margin: 0px;
     }
 
     .card img { 
         width: 100%; 
-        height: auto;
-        margin-bottom: 16px;
+        height: 9.375rem;
     }
 
-    .card-text { padding: 16px; }    
-    .card-text span {padding: 8px 0;}   
+    .left {padding: 16px 16px 16px 0;}
+
+    .middle {padding: 16px;}
+
+    .right {padding: 16px 0 16px 16px;}
+
+    .card-text { 
+        height: 130px;
+        padding: 16px 16px 24px 16px; 
+    }  
+        
+    .card-text span {
+        display: inline-block;
+        padding: 16px 0;}  /* 8px looks odd */
 }
 
-/* --- Thesis Section ---*/
+/* --- THESIS SECTION ---*/
 
 .thesis-exhibits { 
     padding: 32px 0 24px 0;
@@ -297,38 +304,29 @@ picture img {width: 100%;}
         justify-content: center;
     }
     
-    .subsections-container main {     
-        padding: 32px 24px;
-    }
+    .subsections-container main { padding: 32px 24px; }
 
-    .main-thesis-text { text-align: left;}
+    .main-thesis-text { text-align: left; }
 
     .main-thesis-text h2 { padding: 24px 0 8px 0; }
+
+    .thesis-articles { margin-top: 16px;}
 
     .thesis {
         display: flex;
         align-items: center;
     }
 
-    .thesis-text {
-        text-align: left;
-        
-    }
+    .thesis-text { text-align: left; }
 
-    .thesis-text p {
-        padding: 8px 0px;
-    }
+    .thesis-text p { padding: 8px 0px; }
 
-    .thesis-articles .thesis img {
-        padding: 16px;
-    }
+    .thesis-articles .thesis img { padding: 16px; }
 
+    .thesis-exhibits h2 { padding-bottom: 0px; }
 }    
 
-
-
-
-/* --- Footer Section ---*/
+/* --- FOOTER SECTION ---*/
 
 footer { 
     background-color: #F3F5F5;
@@ -342,12 +340,11 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding: 16px 16px 70px 24px;
+        padding: 16px 16px 50px 24px;
         border-top: 1px solid #E9EBEB;
+        font-size: 12px;
     }
 
-    footer a {
-        padding-left: 8px;
-    }
+    footer a { padding-left: 8px;}
     
 }
